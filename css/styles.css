@@ -234,10 +234,9 @@ section {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   display: inline-block;
-  margin: 30px;
-
+  margin: 0;
   color: var(--white-text-background-color);
   font-family: inherit;
   font-weight: 900;
@@ -248,7 +247,8 @@ section {
   text-align: center;
 }
 
-.hero-btn {
+.hero__btn {
+  margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
@@ -268,8 +268,8 @@ section {
   transition: color 250ms var(--time-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   color: var(--headers-color);
 }
 
