@@ -235,7 +235,7 @@ section {
 }
 
 .hero__title {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
   color: var(--white-text-background-color);
   font-family: inherit;
