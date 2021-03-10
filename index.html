@@ -19,33 +19,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
+      <div class="container header__container">
         <nav class="site-nav">
-          <a href="index.html" class="logo top"
-            ><span class="logo-part">Web</span>Studio
+          <a href="index.html" class="logo header__logo"
+            ><span class="logo__accent-part">Web</span>Studio
           </a>
           <ul class="nav-list">
-            <li class="nav-item">
-              <a href="./index.html" class="link current"> Студия </a>
+            <li class="nav-list__item">
+              <a
+                href="./index.html"
+                class="nav-list__link nav-list__link--current"
+              >
+                Студия
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
             </li>
-            <li class="nav-item"><a href="#" class="link">Контакты</a></li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts-list">
-          <li class="contacts item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="contacts-icon" width="16" height="12">
+          <li class="contacts-list__item">
+            <a href="mailto:info@devstudio.com" class="contacts-list__link">
+              <svg class="contacts-list__icon" width="16" height="12">
                 <use href="./images/svg-sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="contacts-list__link">
+              <svg class="contacts-list__icon" width="10" height="16">
                 <use href="./images/svg-sprite.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -388,9 +395,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-box">
+        <div class="footer-wrapper">
           <div class="address-box">
-            <a href="index.html" class="logo bottom"
+            <a href="index.html" class="logo footer__logo"
               ><span class="logo-part">Web</span>Studio</a
             >
             <address class="address">

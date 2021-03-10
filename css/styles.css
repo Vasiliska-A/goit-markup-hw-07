@@ -67,6 +67,10 @@ section {
   border-bottom: 1px solid #ececec;
 }
 
+.contacts-list {
+  display: flex;
+}
+
 .nav-list,
 .contacts-list {
   margin-top: 0;
@@ -78,27 +82,26 @@ section {
   margin-left: auto;
 }
 
-.contacts-list .item + .item {
+.contacts-list__item + .contacts-list__item {
   margin-left: 50px;
 }
 
-.main-nav,
-.site-nav,
-.nav-list,
-.contacts-list {
+.header__container {
   display: flex;
-}
-
-.main-nav,
-.site-nav,
-.nav-list,
-.contacts-list,
-.contacts .item {
   justify-content: center;
   align-items: center;
 }
 
-.nav-list > .nav-item:not(:last-child) {
+.site-nav,
+.nav-list {
+  display: flex;
+}
+
+.site-nav {
+  align-items: center;
+}
+
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -113,9 +116,8 @@ section {
   line-height: 1.1738;
 }
 
-.top {
+.header__logo {
   margin-right: 93px;
-
   color: var(--logo-color);
 }
 
@@ -123,12 +125,12 @@ section {
   color: var(--interactive-color);
 }
 
-.logo-part {
+.logo__accent-part {
   color: var(--interactive-color);
 }
 
 /* Навігація сайту */
-.nav-list .link {
+.nav-list__link {
   position: relative;
 
   display: block;
@@ -152,11 +154,11 @@ section {
   color: var(--interactive-color);
 }
 
-.link.current {
+.nav-list__link--current {
   color: var(--interactive-color);
 }
 
-.link.link.current::after {
+.nav-list__link--current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -172,8 +174,9 @@ section {
 }
 
 /* контактна інфо */
-.contacts-list .link {
-  display: block;
+.contacts-list__link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -189,25 +192,20 @@ section {
   transition: color 250ms var(--time-function);
 }
 
-.contacts-list .link:hover,
-.contacts-list .link:focus {
+.contacts-list__link:hover,
+.contacts-list__link:focus {
   color: var(--interactive-color);
 }
 
-.link:hover.contacts-icon {
+.contacts-list__link:hover .contacts-list__icon {
   fill: currentColor;
 }
 
-.contacts-icon {
+.contacts-list__icon {
   margin-right: 10px;
   fill: currentColor;
 
   transition: color 250ms var(--time-function);
-}
-
-.contacts-list .link {
-  display: flex;
-  align-items: center;
 }
 
 /* section Hero */
@@ -563,7 +561,7 @@ section {
   padding: 0;
 }
 
-.bottom {
+.footer__logo {
   color: var(--white-text-background-color);
 }
 
@@ -604,7 +602,7 @@ section {
 
 /* Соц.Мережі */
 
-.footer-box {
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
