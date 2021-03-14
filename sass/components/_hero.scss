@@ -1,0 +1,60 @@
+.hero {
+  @include centeredFlex;
+  flex-direction: column;
+
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  max-width: 696px;
+  color: var(--white-text-background-color);
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.364;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  
+}
+
+.hero__btn {
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+
+  border: 1px solid transparent;
+
+  color: var(--white-text-background-color);
+  background-color: var(--interactive-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--headers-color);
+  }
+}

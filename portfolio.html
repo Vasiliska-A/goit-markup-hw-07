@@ -15,7 +15,7 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list">
+        <ul class="contacts-list site-nav__contacts-list">
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com" class="contacts-list__link">
               <svg class="contacts-list__icon" width="16" height="12">
@@ -61,8 +61,8 @@
       </div>
     </header>
     <main>
-      <section class="portfolio">
-        <h1 class="visually-hidden">Portfolio</h1>
+      <section class="section portfolio">
+        <h1 class="portfolio-title">Portfolio</h1>
         <div class="container">
           <ul class="buttons-list">
             <li class="buttons-list__item">
@@ -81,8 +81,7 @@
               <button class="portfolio-btn">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <div class="container">
+
           <ul class="projects">
             <li class="project__item">
               <a
@@ -98,7 +97,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -124,7 +123,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -152,7 +151,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -178,7 +177,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -204,7 +203,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -230,7 +229,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -251,7 +250,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -277,7 +276,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -303,7 +302,7 @@
                     width="380"
                     height="296"
                   />
-                  <p class="project__text">
+                  <p class="project__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -328,14 +327,16 @@
             >
             <address class="address">
               <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-              <ul class="contacts">
+              <ul class="footer-contacts-list">
                 <li>
-                  <a href="mailto:info@devstudio.com" class="contacts__item"
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-contacts-list__item"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li>
-                  <a href="tel:+380961111111" class="contacts__item"
+                  <a href="tel:+380961111111" class="footer-contacts-list__item"
                     >+38 096 111 11 11</a
                   >
                 </li>
@@ -344,32 +345,48 @@
           </div>
           <div class="footer-social">
             <span class="footer-social__slogan">присоединяйтесь</span>
-            <ul class="footer-social__list">
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link">
-                  <svg class="footer-social__icon" width="20" height="20">
+            <ul class="social-list footer-social-list">
+              <li class="footer-social-list__item">
+                <a href="#" class="social-list__link footer-social-list__link">
+                  <svg
+                    class="social-list__icon footer-social-list__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/svg-sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link">
-                  <svg class="footer-social__icon" width="20" height="20">
+              <li class="footer-social-list__item">
+                <a href="#" class="social-list__link footer-social-list__link">
+                  <svg
+                    class="social-list__icon footer-social-list__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/svg-sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link">
-                  <svg class="footer-social__icon" width="20" height="20">
+              <li class="footer-social-list__item">
+                <a href="#" class="social-list__link footer-social-list__link">
+                  <svg
+                    class="social-list__icon footer-social-list__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/svg-sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
 
-              <li class="footer-social__item">
-                <a href="#" class="footer-social__link">
-                  <svg class="footer-social__icon" width="20" height="20">
+              <li class="footer-social-list__item">
+                <a href="#" class="social-list__link footer-social-list__link">
+                  <svg
+                    class="social-list__icon footer-social-list__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/svg-sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>

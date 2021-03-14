@@ -1,0 +1,54 @@
+/* Секція Features */
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.features__icon {
+  @include centeredFlex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: var(--card-set-gap);
+
+  background-color: var(--section-team-background-color);
+}
+
+.features__list {
+  @include centeredFlex($positionH: space-between);
+}
+
+.features__item:not(:first-child) {
+  margin-left: var(--card-set-gap);
+}
+
+.features__item {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.features-title--hidden {
+  @extend %visually-hidden;
+}
+
+.features__text {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
